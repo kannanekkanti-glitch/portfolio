@@ -263,32 +263,6 @@ export default function Hero() {
           </div>
 
         </div>
-
-        {/* Stats Strip under Hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 sm:mt-20 pt-8 border-t border-zinc-800/30 dark:border-zinc-800/70"
-        >
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
-            {personalInfo.stats.map((stat, idx) => (
-              <div key={idx} className="flex flex-col items-center sm:items-start">
-                <span
-                  className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${
-                    isDark ? "text-gradient-silver" : "text-zinc-900"
-                  }`}
-                >
-                  {stat.value}
-                </span>
-                <span className={`text-xs sm:text-sm font-medium mt-1 ${isDark ? "text-zinc-400" : "text-zinc-500"}`}>
-                  {stat.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
       </div>
     </section>
   );

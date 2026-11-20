@@ -75,31 +75,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-
-            {/* Quick Stats Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              {personalInfo.stats.map((stat, idx) => (
-                <div
-                  key={idx}
-                  className={`p-5 rounded-2xl border text-center ${
-                    isDark
-                      ? "bg-zinc-900/40 border-zinc-800/70"
-                      : "bg-white border-slate-200 shadow-sm"
-                  }`}
-                >
-                  <p
-                    className={`text-2xl sm:text-3xl font-extrabold ${
-                      isDark ? "text-emerald-400" : "text-emerald-600"
-                    }`}
-                  >
-                    {stat.value}
-                  </p>
-                  <p className={`text-xs font-medium mt-1 ${isDark ? "text-zinc-400" : "text-zinc-500"}`}>
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right Column: Detailed Editorial Sections */}

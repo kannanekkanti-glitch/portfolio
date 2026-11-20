@@ -74,12 +74,6 @@ export const personalInfo = {
     instagram: "https://instagram.com",
     twitter: "https://x.com",
   },
-  stats: [
-    { label: "Years Experience", value: "4+" },
-    { label: "Completed Projects", value: "35+" },
-    { label: "Client Satisfaction", value: "99.8%" },
-    { label: "AI Workflows Deployed", value: "15+" },
-  ],
 };
 
 export const featuredProjects: Project[] = [
