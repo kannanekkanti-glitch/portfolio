@@ -48,16 +48,6 @@ export interface ProcessStep {
   duration: string;
 }
 
-export interface AchievementItem {
-  id: string;
-  category: "Certifications" | "Technical achievements" | "Projects completed" | "Hackathons" | "Internships" | "Learning milestones";
-  title: string;
-  organization: string;
-  date: string;
-  description: string;
-  badge?: string;
-  credentialUrl?: string;
-}
 
 export const personalInfo = {
   name: "Tanush Nekkanti",
@@ -391,107 +381,6 @@ export const processSteps: ProcessStep[] = [
   },
 ];
 
-export const achievementsData: AchievementItem[] = [
-  {
-    id: "cert-aws",
-    category: "Certifications",
-    title: "AWS Certified Cloud Practitioner",
-    organization: "Amazon Web Services",
-    date: "2024",
-    description: "Demonstrated comprehensive understanding of cloud infrastructure, security compliance, serverless architectures, and global networking.",
-    badge: "Cloud Certified",
-  },
-  {
-    id: "cert-genai",
-    category: "Certifications",
-    title: "Generative AI with Large Language Models",
-    organization: "DeepLearning.AI & Coursera",
-    date: "2024",
-    description: "Mastered fine-tuning, RLHF alignment, prompt engineering, RAG pipelines, and deploying LLM applications at scale.",
-    badge: "AI Specialization",
-  },
-  {
-    id: "cert-meta",
-    category: "Certifications",
-    title: "Meta Professional Frontend Developer",
-    organization: "Meta / Coursera",
-    date: "2023",
-    description: "Rigorous certification covering advanced React architecture, UI/UX principles, JavaScript runtime execution, and automated testing.",
-    badge: "Frontend Certified",
-  },
-  {
-    id: "tech-hackathon-1",
-    category: "Hackathons",
-    title: "1st Place Winner — Global AI Innovation Hackathon",
-    organization: "Global AI Tech Forum",
-    date: "2024",
-    description: "Built an autonomous research synthesis agent that extracts and verifies citations across thousands of scientific PDF papers in under 30 seconds.",
-    badge: "1st Prize",
-  },
-  {
-    id: "tech-hackathon-2",
-    category: "Hackathons",
-    title: "Top 3 Finalist — DevPost Web3 & AI Sprint",
-    organization: "DevPost Community",
-    date: "2023",
-    description: "Developed a decentralized workflow automation bot bridging on-chain events with automated webhook triggers and notifications.",
-    badge: "Finalist",
-  },
-  {
-    id: "intern-1",
-    category: "Internships",
-    title: "Full-Stack Software Engineering Intern",
-    organization: "TechNova Solutions",
-    date: "2023 - 2024",
-    description: "Engineered responsive customer portal features in Next.js and TypeScript, increasing user session engagement by 38% and reducing bundle size by 24%.",
-    badge: "Engineering",
-  },
-  {
-    id: "intern-2",
-    category: "Internships",
-    title: "AI Integration & Automation Fellow",
-    organization: "Nexus Labs",
-    date: "2023",
-    description: "Developed automated data extraction pipelines using Python and OpenAI API, processing over 50,000 document records weekly with 99.4% accuracy.",
-    badge: "Fellowship",
-  },
-  {
-    id: "achieve-scale",
-    category: "Technical achievements",
-    title: "Engineered High-Volume Real-Time API Stream",
-    organization: "Production Client Milestone",
-    date: "2024",
-    description: "Architected a WebSocket push architecture handling over 100,000 daily concurrent events with sub-50ms roundtrip delivery.",
-    badge: "Architecture",
-  },
-  {
-    id: "achieve-oss",
-    category: "Technical achievements",
-    title: "Open Source Contributor to Next.js & React Ecosystem",
-    organization: "GitHub Community",
-    date: "2023 - Present",
-    description: "Contributed documentation improvements, bug fixes, and utility enhancements to popular open-source web tooling repositories.",
-    badge: "Open Source",
-  },
-  {
-    id: "milestone-projects",
-    category: "Projects completed",
-    title: "35+ Production-Grade Digital Platforms Delivered",
-    organization: "Client & Independent Portfolio",
-    date: "2021 - Present",
-    description: "Delivered responsive web apps, SaaS dashboards, and automated AI systems across fintech, education, e-commerce, and creative tech.",
-    badge: "Milestone",
-  },
-  {
-    id: "learn-systems",
-    category: "Learning milestones",
-    title: "Deep Mastery of Distributed Systems & Agentic Frameworks",
-    organization: "Independent R&D",
-    date: "2024",
-    description: "Designed robust self-correcting agent loops, event-driven microservices, and high-performance serverless edge routines.",
-    badge: "R&D",
-  },
-];
 
 export const aboutContent = {
   headline: "Turning visionary concepts into scalable, elegant software.",

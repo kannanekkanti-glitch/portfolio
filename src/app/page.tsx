@@ -6,7 +6,6 @@ import Skills from "@/components/Skills";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Process from "@/components/Process";
-import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -27,7 +26,6 @@ export default function Home() {
         <Services />
         <About />
         <Process />
-        <Achievements />
         <Contact />
       </main>
 

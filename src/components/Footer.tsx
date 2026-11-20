@@ -12,7 +12,6 @@ const FOOTER_LINKS = [
   { name: "Skills", href: "#skills" },
   { name: "Services", href: "#services" },
   { name: "Process", href: "#process" },
-  { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
 ];
 
